@@ -1,7 +1,7 @@
 import UIKit
 
 public extension NSObject {
-    public class var className: String {
+    class var className: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
     }
     
