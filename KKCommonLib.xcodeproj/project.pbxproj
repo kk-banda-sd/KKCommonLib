@@ -32,6 +32,7 @@
 		B1CA65F72723710C00710594 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65F52723710C00710594 /* Utils.swift */; };
 		B1CA65FB2723716300710594 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65F92723716300710594 /* SpinnerView.swift */; };
 		B1CA65FC2723716300710594 /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65FA2723716300710594 /* ProgressRing.swift */; };
+		B1CA66042723762800710594 /* KKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA66032723762800710594 /* KKError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		B1CA65F52723710C00710594 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B1CA65F92723716300710594 /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		B1CA65FA2723716300710594 /* ProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
+		B1CA66032723762800710594 /* KKError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKError.swift; sourceTree = "<group>"; };
 		B1EA2DBD2722E0F500A2593E /* KKCommonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKCommonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 		B1CA65F32723710C00710594 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B1CA66032723762800710594 /* KKError.swift */,
 				B1CA65F82723716300710594 /* SpinnerView */,
 				B1CA65F42723710C00710594 /* Spacers.swift */,
 				B1CA65F52723710C00710594 /* Utils.swift */,
@@ -245,6 +248,7 @@
 				B1CA65EA27236FF400710594 /* UIViewController+Extension.swift in Sources */,
 				B1CA65EF27236FF400710594 /* Numbers+Extension.swift in Sources */,
 				B1CA65E327236FF400710594 /* UIImageView+Extension.swift in Sources */,
+				B1CA66042723762800710594 /* KKError.swift in Sources */,
 				B1CA65FC2723716300710594 /* ProgressRing.swift in Sources */,
 				B1CA65E427236FF400710594 /* UIDevice+Extension.swift in Sources */,
 				B1CA65E927236FF400710594 /* UIImage+Extension.swift in Sources */,
