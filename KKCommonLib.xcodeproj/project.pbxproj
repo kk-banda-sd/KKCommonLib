@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B17EEA8927237D200058942C /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EEA8827237D200058942C /* Bundle+Extension.swift */; };
 		B1CA65DE27236FF400710594 /* NSNotification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65C827236FF400710594 /* NSNotification+Extensions.swift */; };
 		B1CA65DF27236FF400710594 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65C927236FF400710594 /* KeyboardManager.swift */; };
 		B1CA65E027236FF400710594 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65CA27236FF400710594 /* KeyboardNotification.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B17EEA8827237D200058942C /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		B1CA65C827236FF400710594 /* NSNotification+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extensions.swift"; sourceTree = "<group>"; };
 		B1CA65C927236FF400710594 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		B1CA65CA27236FF400710594 /* KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				B1CA65DD27236FF400710594 /* Array+Extension.swift */,
+				B17EEA8827237D200058942C /* Bundle+Extension.swift */,
 				B1CA65DB27236FF400710594 /* CGSize+Extension.swift */,
 				B1CA65D227236FF400710594 /* NSObject+Extension.swift */,
 				B1CA65DA27236FF400710594 /* Numbers+Extension.swift */,
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1CA65E827236FF400710594 /* UIView+Extension.swift in Sources */,
+				B17EEA8927237D200058942C /* Bundle+Extension.swift in Sources */,
 				B1CA65EA27236FF400710594 /* UIViewController+Extension.swift in Sources */,
 				B1CA65EF27236FF400710594 /* Numbers+Extension.swift in Sources */,
 				B1CA65E327236FF400710594 /* UIImageView+Extension.swift in Sources */,
