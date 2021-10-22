@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     var notEmpty: Bool {
         return !self.isEmpty
     }
