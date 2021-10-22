@@ -1,10 +1,3 @@
-//
-//  CGSize+Extension.swift
-//  KKCommonLib
-//
-//  Created by Kostya Karakay on 23.10.2021.
-//
-
 import UIKit
 
 public extension CGSize {
