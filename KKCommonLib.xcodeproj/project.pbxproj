@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B14C59552723885500864006 /* KKCommonLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14C59542723885500864006 /* KKCommonLib.swift */; };
 		B17EEA8927237D200058942C /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EEA8827237D200058942C /* Bundle+Extension.swift */; };
 		B1CA65DE27236FF400710594 /* NSNotification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65C827236FF400710594 /* NSNotification+Extensions.swift */; };
 		B1CA65DF27236FF400710594 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65C927236FF400710594 /* KeyboardManager.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B14C59542723885500864006 /* KKCommonLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCommonLib.swift; sourceTree = "<group>"; };
 		B17EEA8827237D200058942C /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		B1CA65C827236FF400710594 /* NSNotification+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extensions.swift"; sourceTree = "<group>"; };
 		B1CA65C927236FF400710594 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				B1CA65F32723710C00710594 /* Utils */,
 				B1CA65CD27236FF400710594 /* Extensions */,
 				B1CA65C727236FF400710594 /* KeyboardManager */,
+				B14C59542723885500864006 /* KKCommonLib.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				B1CA65ED27236FF400710594 /* UserDefaults+Extension.swift in Sources */,
 				B1CA65F127236FF400710594 /* UIView+Localized.swift in Sources */,
 				B1CA65DF27236FF400710594 /* KeyboardManager.swift in Sources */,
+				B14C59552723885500864006 /* KKCommonLib.swift in Sources */,
 				B1CA65E127236FF400710594 /* NSLayoutConstraintSet.swift in Sources */,
 				B1CA65EB27236FF400710594 /* String+Extension.swift in Sources */,
 				B1CA65EE27236FF400710594 /* UIScrollView+Extension.swift in Sources */,

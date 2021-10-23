@@ -32,3 +32,60 @@ public extension UIView {
         self.layer.shadowOffset = offset
     }
 }
+
+// MARK: - Show/Hide
+public extension UIView {
+    @objc func show(_ completion: (() -> Void)? = nil) {
+        UIView.animate(withDuration: KKCommonLib.animationTime, animations: {
+            self.alpha = 1
+        }) { (_) in
+            completion?()
+        }
+    }
+    
+    var isShown: Bool {
+        return alpha == 1
+    }
+    
+    @objc func hide(_ completion: (() -> Void)? = nil) {
+        UIView.animate(withDuration: KKCommonLib.animationTime, animations: {
+            self.alpha = 0
+        }) { (_) in
+            completion?()
+        }
+    }
+    
+    func makeBounceAnimation(_ scale: CGFloat) {
+        UIView.animate(withDuration: 0.1, animations: {
+            self.transform = self.transform.scaledBy(x: scale, y: scale)
+        }, completion: { _ in
+            UIView.animate(withDuration: 0.1, animations: {
+                self.transform = CGAffineTransform.identity
+            })
+        })
+    }
+}
+
+// MARK: - Rotation
+public extension UIView {
+    private static let kRotationAnimationKey = "rotationanimationkey"
+
+    func rotate(duration: Double = 1) {
+        if self.layer.animation(forKey: UIView.kRotationAnimationKey) == nil {
+            let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
+
+            rotationAnimation.fromValue = 0.0
+            rotationAnimation.toValue = Float.pi * 2.0
+            rotationAnimation.duration = duration
+            rotationAnimation.repeatCount = Float.infinity
+
+            self.layer.add(rotationAnimation, forKey: UIView.kRotationAnimationKey)
+        }
+    }
+
+    func stopRotating() {
+        if self.layer.animation(forKey: UIView.kRotationAnimationKey) != nil {
+            self.layer.removeAnimation(forKey: UIView.kRotationAnimationKey)
+        }
+    }
+}
