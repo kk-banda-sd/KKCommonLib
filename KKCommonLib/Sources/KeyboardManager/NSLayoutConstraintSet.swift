@@ -1,16 +1,16 @@
 import Foundation
 import UIKit
 
-class NSLayoutConstraintSet {
+public class NSLayoutConstraintSet {
     
-    var top: NSLayoutConstraint?
-    var bottom: NSLayoutConstraint?
-    var left: NSLayoutConstraint?
-    var right: NSLayoutConstraint?
-    var centerX: NSLayoutConstraint?
-    var centerY: NSLayoutConstraint?
-    var width: NSLayoutConstraint?
-    var height: NSLayoutConstraint?
+    public var top: NSLayoutConstraint?
+    public var bottom: NSLayoutConstraint?
+    public var left: NSLayoutConstraint?
+    public var right: NSLayoutConstraint?
+    public var centerX: NSLayoutConstraint?
+    public var centerY: NSLayoutConstraint?
+    public var width: NSLayoutConstraint?
+    public var height: NSLayoutConstraint?
     
     public init(top: NSLayoutConstraint? = nil,
                 bottom: NSLayoutConstraint? = nil,
@@ -39,13 +39,13 @@ class NSLayoutConstraintSet {
     }
     
     @discardableResult
-    func activate() -> Self {
+    public func activate() -> Self {
         NSLayoutConstraint.activate(availableConstraints)
         return self
     }
     
     @discardableResult
-    func deactivate() -> Self {
+    public func deactivate() -> Self {
         NSLayoutConstraint.deactivate(availableConstraints)
         return self
     }

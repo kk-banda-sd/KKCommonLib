@@ -11,4 +11,16 @@ public extension UIScreen {
         }
         return false
     }
+    
+    static var size: CGSize {
+        return UIScreen.main.bounds.size
+    }
+    
+    static var width: CGFloat {
+        return self.size.width
+    }
+    
+    static var height: CGFloat {
+        return self.size.height
+    }
 }

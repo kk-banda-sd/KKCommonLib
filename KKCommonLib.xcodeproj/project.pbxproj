@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B14C59552723885500864006 /* KKCommonLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14C59542723885500864006 /* KKCommonLib.swift */; };
 		B17EEA8927237D200058942C /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EEA8827237D200058942C /* Bundle+Extension.swift */; };
+		B1B627D0272434D800347A42 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B627CF272434D800347A42 /* Util.swift */; };
 		B1CA65DE27236FF400710594 /* NSNotification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65C827236FF400710594 /* NSNotification+Extensions.swift */; };
 		B1CA65DF27236FF400710594 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65C927236FF400710594 /* KeyboardManager.swift */; };
 		B1CA65E027236FF400710594 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65CA27236FF400710594 /* KeyboardNotification.swift */; };
@@ -31,7 +32,6 @@
 		B1CA65F127236FF400710594 /* UIView+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65DC27236FF400710594 /* UIView+Localized.swift */; };
 		B1CA65F227236FF400710594 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65DD27236FF400710594 /* Array+Extension.swift */; };
 		B1CA65F62723710C00710594 /* Spacers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65F42723710C00710594 /* Spacers.swift */; };
-		B1CA65F72723710C00710594 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65F52723710C00710594 /* Utils.swift */; };
 		B1CA65FB2723716300710594 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65F92723716300710594 /* SpinnerView.swift */; };
 		B1CA65FC2723716300710594 /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65FA2723716300710594 /* ProgressRing.swift */; };
 		B1CA66042723762800710594 /* KKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA66032723762800710594 /* KKError.swift */; };
@@ -40,6 +40,7 @@
 /* Begin PBXFileReference section */
 		B14C59542723885500864006 /* KKCommonLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCommonLib.swift; sourceTree = "<group>"; };
 		B17EEA8827237D200058942C /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		B1B627CF272434D800347A42 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		B1CA65C827236FF400710594 /* NSNotification+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extensions.swift"; sourceTree = "<group>"; };
 		B1CA65C927236FF400710594 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		B1CA65CA27236FF400710594 /* KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		B1CA65DC27236FF400710594 /* UIView+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Localized.swift"; sourceTree = "<group>"; };
 		B1CA65DD27236FF400710594 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		B1CA65F42723710C00710594 /* Spacers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spacers.swift; sourceTree = "<group>"; };
-		B1CA65F52723710C00710594 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B1CA65F92723716300710594 /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		B1CA65FA2723716300710594 /* ProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
 		B1CA66032723762800710594 /* KKError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKError.swift; sourceTree = "<group>"; };
@@ -119,10 +119,10 @@
 		B1CA65F32723710C00710594 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B1B627CF272434D800347A42 /* Util.swift */,
 				B1CA66032723762800710594 /* KKError.swift */,
 				B1CA65F82723716300710594 /* SpinnerView */,
 				B1CA65F42723710C00710594 /* Spacers.swift */,
-				B1CA65F52723710C00710594 /* Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -261,6 +261,7 @@
 				B1CA65E927236FF400710594 /* UIImage+Extension.swift in Sources */,
 				B1CA65E027236FF400710594 /* KeyboardNotification.swift in Sources */,
 				B1CA65F62723710C00710594 /* Spacers.swift in Sources */,
+				B1B627D0272434D800347A42 /* Util.swift in Sources */,
 				B1CA65ED27236FF400710594 /* UserDefaults+Extension.swift in Sources */,
 				B1CA65F127236FF400710594 /* UIView+Localized.swift in Sources */,
 				B1CA65DF27236FF400710594 /* KeyboardManager.swift in Sources */,
@@ -269,7 +270,6 @@
 				B1CA65EB27236FF400710594 /* String+Extension.swift in Sources */,
 				B1CA65EE27236FF400710594 /* UIScrollView+Extension.swift in Sources */,
 				B1CA65E727236FF400710594 /* NSObject+Extension.swift in Sources */,
-				B1CA65F72723710C00710594 /* Utils.swift in Sources */,
 				B1CA65F027236FF400710594 /* CGSize+Extension.swift in Sources */,
 				B1CA65E627236FF400710594 /* UIButton+Extension.swift in Sources */,
 				B1CA65EC27236FF400710594 /* UIScreen+Extension.swift in Sources */,

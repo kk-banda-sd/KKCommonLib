@@ -8,6 +8,10 @@ public class KKError {
     public var code: Int = 0
     
     // MARK: - Helpers
+    public var isCanceled: Bool {
+        return code == -999
+    }
+    
     public var error: Error {
         return NSError(domain: "domain", code: code, userInfo: [NSLocalizedDescriptionKey : message])
     }

@@ -8,21 +8,20 @@ public extension NSObject {
     var className: String {
         return NSStringFromClass(type(of: self)).components(separatedBy: ".").last!
     }
-    
-    func delay(_ time: TimeInterval, callBack: @escaping() -> Void) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + time) {
-            callBack()
-        }
-    }
+}
 
-    func makeVibration(_ style: UIImpactFeedbackGenerator.FeedbackStyle = .light) {
-        let generator = UIImpactFeedbackGenerator(style: style)
-        generator.impactOccurred()
+public func delay(_ time: TimeInterval, callBack: @escaping() -> Void) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + time) {
+        callBack()
     }
+}
 
-    func makeNotificationVibration(_ type: UINotificationFeedbackGenerator.FeedbackType) {
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(type)
-    }
+public func makeVibration(_ style: UIImpactFeedbackGenerator.FeedbackStyle = .light) {
+    let generator = UIImpactFeedbackGenerator(style: style)
+    generator.impactOccurred()
+}
 
+public func makeNotificationVibration(_ type: UINotificationFeedbackGenerator.FeedbackType) {
+    let generator = UINotificationFeedbackGenerator()
+    generator.notificationOccurred(type)
 }
