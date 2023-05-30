@@ -10,6 +10,12 @@ public extension Int {
     }
 }
 
+extension UInt {
+    var int: Int {
+        return Int(self)
+    }
+}
+
 public extension Double {
     var size: CGSize {
         return CGSize(self)
