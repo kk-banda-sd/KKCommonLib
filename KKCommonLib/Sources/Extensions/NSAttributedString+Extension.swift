@@ -47,7 +47,7 @@ public extension NSAttributedString {
     }
 }
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
     func space() {
         self.append(NSAttributedString(string: " "))
     }

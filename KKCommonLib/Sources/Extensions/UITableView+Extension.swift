@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
     func removeSeparatorsOfEmptyCells() {
         self.tableFooterView = UIView(frame: .zero)
     }

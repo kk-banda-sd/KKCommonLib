@@ -1,6 +1,6 @@
 import Foundation
 
-extension Bundle {
+public extension Bundle {
     var releaseVersionNumber: String {
         return self.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
     }
