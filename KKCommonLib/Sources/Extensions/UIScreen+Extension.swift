@@ -1,7 +1,7 @@
 import UIKit
 
 public extension UIScreen {
-    static func safeAreaInset() -> UIEdgeInsets {
+    static var safeAreaInsets: UIEdgeInsets {
         return UIApplication.shared.keyWindow?.safeAreaInsets ?? .zero
     }
     
