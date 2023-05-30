@@ -21,9 +21,8 @@ public func makeVibration(_ style: HapticFeedbackStyle = .light) {
     Haptic.impact(style).generate()
 }
 
-public func makeNotificationVibration(_ type: UINotificationFeedbackGenerator.FeedbackType) {
-    let generator = UINotificationFeedbackGenerator()
-    generator.notificationOccurred(type)
+public func makeNotificationVibration(_ type: HapticFeedbackType = .success) {
+    Haptic.notification(type).generate()
 }
 
 public func resignAnyResponder() {
