@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-extension NSAttributedString {
+public extension NSAttributedString {
     func lineCount(atSize size: CGSize) -> Int {
         let attrs = self.attributes(at: 0, effectiveRange: nil)
         guard let font = (attrs[.font] as? UIFont) else { return 0 }
