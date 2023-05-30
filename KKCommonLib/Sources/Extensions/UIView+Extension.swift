@@ -9,6 +9,16 @@ public extension UIView {
         }
         return UIView()
     }
+    
+    var screenshot: UIImage? {
+        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, 0)
+        defer {
+            UIGraphicsEndImageContext()
+        }
+        guard let context = UIGraphicsGetCurrentContext() else { return nil }
+        layer.render(in: context)
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
 }
 
 // MARK: - Shadow
@@ -31,6 +41,10 @@ public extension UIView {
         self.layer.shadowOpacity = opacity
         self.layer.shadowOffset = offset
     }
+    
+    func removeShadow() {
+        self.layer.shadowColor = UIColor.clear.cgColor
+    }
 }
 
 // MARK: - Show/Hide
@@ -44,7 +58,7 @@ public extension UIView {
     }
     
     var isShown: Bool {
-        return alpha == 1
+        return self.alpha == 1
     }
     
     @objc func hide(_ completion: (() -> Void)? = nil) {

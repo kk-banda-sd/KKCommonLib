@@ -1,4 +1,5 @@
 import UIKit
+import Haptica
 
 public extension NSObject {
     class var className: String {
@@ -16,12 +17,15 @@ public func delay(_ time: TimeInterval, callBack: @escaping() -> Void) {
     }
 }
 
-public func makeVibration(_ style: UIImpactFeedbackGenerator.FeedbackStyle = .light) {
-    let generator = UIImpactFeedbackGenerator(style: style)
-    generator.impactOccurred()
+public func makeVibration(_ style: HapticFeedbackStyle = .light) {
+    Haptic.impact(style).generate()
 }
 
 public func makeNotificationVibration(_ type: UINotificationFeedbackGenerator.FeedbackType) {
     let generator = UINotificationFeedbackGenerator()
     generator.notificationOccurred(type)
+}
+
+public func resignAnyResponder() {
+    UIApplication.shared.sendAction(#selector(UIApplication.resignFirstResponder), to: nil, from: nil, for: nil)
 }

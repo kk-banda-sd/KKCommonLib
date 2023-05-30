@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'KKCommonLib'
-  s.version      = '0.1.3'
+  s.version      = '0.1.4'
   s.summary      = 'A CocoaPods library written in Swift'
 
   s.description  = <<-DESC
@@ -21,5 +21,6 @@ Pod::Spec.new do |s|
   s.dependency 'SwifterSwift'
   s.dependency 'R.swift'
   s.dependency 'SnapKit'
+  s.dependency 'Haptica'
 
 end

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B14C59552723885500864006 /* KKCommonLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14C59542723885500864006 /* KKCommonLib.swift */; };
 		B17EEA8927237D200058942C /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EEA8827237D200058942C /* Bundle+Extension.swift */; };
+		B1A5AE482A2622A90066E18D /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5AE472A2622A90066E18D /* NSAttributedString+Extension.swift */; };
+		B1A5AE4A2A2623720066E18D /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5AE492A2623720066E18D /* NSError+Extension.swift */; };
+		B1A5AE4C2A2627FA0066E18D /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5AE4B2A2627FA0066E18D /* UITableView+Extension.swift */; };
 		B1B627D0272434D800347A42 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B627CF272434D800347A42 /* Util.swift */; };
 		B1CA65DE27236FF400710594 /* NSNotification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65C827236FF400710594 /* NSNotification+Extensions.swift */; };
 		B1CA65DF27236FF400710594 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA65C927236FF400710594 /* KeyboardManager.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		B14C59542723885500864006 /* KKCommonLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCommonLib.swift; sourceTree = "<group>"; };
 		B17EEA8827237D200058942C /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		B1A5AE472A2622A90066E18D /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		B1A5AE492A2623720066E18D /* NSError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
+		B1A5AE4B2A2627FA0066E18D /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		B1B627CF272434D800347A42 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		B1CA65C827236FF400710594 /* NSNotification+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotification+Extensions.swift"; sourceTree = "<group>"; };
 		B1CA65C927236FF400710594 /* KeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
@@ -98,6 +104,8 @@
 				B1CA65DD27236FF400710594 /* Array+Extension.swift */,
 				B17EEA8827237D200058942C /* Bundle+Extension.swift */,
 				B1CA65DB27236FF400710594 /* CGSize+Extension.swift */,
+				B1A5AE472A2622A90066E18D /* NSAttributedString+Extension.swift */,
+				B1A5AE492A2623720066E18D /* NSError+Extension.swift */,
 				B1CA65D227236FF400710594 /* NSObject+Extension.swift */,
 				B1CA65DA27236FF400710594 /* Numbers+Extension.swift */,
 				B1CA65D627236FF400710594 /* String+Extension.swift */,
@@ -108,6 +116,7 @@
 				B1CA65CE27236FF400710594 /* UIImageView+Extension.swift */,
 				B1CA65D727236FF400710594 /* UIScreen+Extension.swift */,
 				B1CA65D927236FF400710594 /* UIScrollView+Extension.swift */,
+				B1A5AE4B2A2627FA0066E18D /* UITableView+Extension.swift */,
 				B1CA65D327236FF400710594 /* UIView+Extension.swift */,
 				B1CA65DC27236FF400710594 /* UIView+Localized.swift */,
 				B1CA65D527236FF400710594 /* UIViewController+Extension.swift */,
@@ -257,6 +266,7 @@
 				B1CA65E327236FF400710594 /* UIImageView+Extension.swift in Sources */,
 				B1CA66042723762800710594 /* KKError.swift in Sources */,
 				B1CA65FC2723716300710594 /* ProgressRing.swift in Sources */,
+				B1A5AE482A2622A90066E18D /* NSAttributedString+Extension.swift in Sources */,
 				B1CA65E427236FF400710594 /* UIDevice+Extension.swift in Sources */,
 				B1CA65E927236FF400710594 /* UIImage+Extension.swift in Sources */,
 				B1CA65E027236FF400710594 /* KeyboardNotification.swift in Sources */,
@@ -272,6 +282,8 @@
 				B1CA65E727236FF400710594 /* NSObject+Extension.swift in Sources */,
 				B1CA65F027236FF400710594 /* CGSize+Extension.swift in Sources */,
 				B1CA65E627236FF400710594 /* UIButton+Extension.swift in Sources */,
+				B1A5AE4A2A2623720066E18D /* NSError+Extension.swift in Sources */,
+				B1A5AE4C2A2627FA0066E18D /* UITableView+Extension.swift in Sources */,
 				B1CA65EC27236FF400710594 /* UIScreen+Extension.swift in Sources */,
 				B1CA65DE27236FF400710594 /* NSNotification+Extensions.swift in Sources */,
 				B1CA65F227236FF400710594 /* Array+Extension.swift in Sources */,

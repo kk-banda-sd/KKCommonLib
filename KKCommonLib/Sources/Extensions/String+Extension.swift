@@ -6,6 +6,10 @@ public extension String {
         return !self.isEmpty
     }
     
+    var int: Int? {
+        return Int(self)
+    }
+    
     mutating func newLine(_ count: Int = 1) {
         for _ in 0..<count {
             self.append("\n")
@@ -30,6 +34,12 @@ public extension String {
         let fontAttributes = [NSAttributedString.Key.font: font]
         let size = self.size(withAttributes: fontAttributes)
         return size.width
+    }
+    
+    func width(withConstrainedHeight height: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+        return ceil(boundingBox.width)
     }
     
     func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
@@ -64,5 +74,9 @@ public extension String {
         if time < minTime {time = minTime}
         
         return time / 1000
+    }
+    
+    func removeString(_ type: String) -> String {
+        return self.replacingOccurrences(of: type, with: "")
     }
 }
