@@ -10,7 +10,7 @@ public extension Int {
     }
 }
 
-extension UInt {
+public extension UInt {
     var int: Int {
         return Int(self)
     }
