@@ -35,7 +35,7 @@ public extension KKError {
         return KKError(message: "Internal server error", code: 500)
     }
     
-    static var somethingWentWrong: KPError {
+    static var somethingWentWrong: KKError {
         return KKError(message: "Something went wrong", code: 777)
     }
 }
